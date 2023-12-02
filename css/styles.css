@@ -3,8 +3,9 @@
 }
 
 body {
-	font-family: courier, Arial, sans-serif;
+	padding: 0;
 	margin: 0;
+	font-family: courier, Arial, sans-serif;
 }
 
 header {
@@ -16,16 +17,14 @@ header {
 }
 
 main {
-	display: -webkit-flex;
 	display: flex;
 	width: 60%;
 	height: 1000px;
-	margin: auto;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
 nav {
-	-webkit-flex: 1;
-	-ms-flex: 1;
 	flex: 1;
 	float: left;
 	background: #ccc;
@@ -38,8 +37,6 @@ nav ul {
 }
 
 article {
-	-webkit-flex: 3;
-	-ms-flex: 3;
 	flex: 3;
 	padding: 10px;
 	background-color: #f1f1f1;
@@ -55,8 +52,22 @@ footer {
 @media (max-width: 600px) {
   main {
 	width: 80%;
-	-webkit-flex-direction: column;
 	flex-direction: column;
   }
 }
 
+table {
+	border: 2px solid blue;
+}
+ 
+td {
+	background-color: mediumturquoise;
+	border: 1px solid black;
+	height: 50px;
+	width: 200px;
+	text-align: center;
+}
+ 
+.colored {
+	background-color:greenyellow;
+}
