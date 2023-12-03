@@ -1,5 +1,5 @@
 let selected;
-table = document.querySelector('table')
+table = document.querySelector('table');
  
 table.onmouseover = function(event) {
   let target = event.target;
@@ -15,4 +15,4 @@ function highlight(td) {
   }
   selected = td;
   selected.classList.add('colored');
-}
+};

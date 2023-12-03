@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Ivan Muravev - Beginner developer</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Buisness card website">
 		<meta name="author" content="Ivan Muravev">
-		<title>Ivan Muravev - Beginner developer | Home</title>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-		<link rel="stylesheet" href="css/styles.css" type="text/css">
-		<script src="js/script.js" defer></script>
-		<!-- <style></style> -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css" >
+		<link rel="stylesheet" type="text/css" href="styles/light.css" id="theme-link">
+		<!--<script type="text/javascript" src="scripts/table.js"></script>-->
+		<script type="text/javascript" src="scripts/themes.js" defer></script>
 	</head>
 	<body>
-		<header>
-				<h1>Home</h1>
-		</header>
+		<div class="wrapper">
+			<div class="theme-button" id="theme-button">Change theme</div>
+			<header class="header">
+					<div class="header__content">
+						<h1>Home page</h1>
+						<nav class="nav">
+							<div class="nav__content">
+								<a href="skills.html" class="nav__item nav__item_active">Skills</a>
+								<a href="contacts.html" class="nav__item">Contacts</a>
+							</div>
+						</nav>
+					</div>
+			</header>
 
-		<main>
-			<nav>
-				<ul>
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="contacts.html">Contacts</a></li>
-				</ul>
-			</nav>
-  
-			<article>
-				<h1>In general about me</h1>
-				<p>Incredible software developer who is need for every human on the Earth.</p>
-				<p>LOL I'm just a genius.</p>
-			</article>
-			<table>
-				<tr>
-					<td>Выбери меня</td>
-					<td>Или меня</td>
-					<td>Можно и меня</td>
-					<td>Лучше меня</td>
-				</tr>
-				<tr>
-					<td>Выбери меня</td>
-					<td>Или меня</td>
-					<td>Можно и меня</td>
-					<td>Лучше меня</td>
-				</tr>
-				<tr>
-					<td>Никого не слушай</td>
-					<td>Лучше сюда</td>
-					<td>Я тут главный</td>
-					<td>Готов?</td>
-				</tr>
-				<tr>
-					<td>Никого не слушай</td>
-					<td>Лучше сюда</td>
-					<td>Я тут главный</td>
-					<td>Готов?</td>
-				</tr>
-			</table>
-		</main>
+			<main class="main">
+				<article class="main__content">
+					<h1>In general about me</h1>
+					<p>Incredible software developer who is need for every human on the Earth.</p>
+					<p>LOL I'm just a genius.</p>
+				</article>
+				<!--
+				<table>
+					<tr>
+						<td>Выбери меня</td>
+						<td>Или меня</td>
+						<td>Можно и меня</td>
+						<td>Лучше меня</td>
+					</tr>
+					<tr>
+						<td>Выбери меня</td>
+						<td>Или меня</td>
+						<td>Можно и меня</td>
+						<td>Лучше меня</td>
+					</tr>
+					<tr>
+						<td>Никого не слушай</td>
+						<td>Лучше сюда</td>
+						<td>Я тут главный</td>
+						<td>Готов?</td>
+					</tr>
+					<tr>
+						<td>Никого не слушай</td>
+						<td>Лучше сюда</td>
+						<td>Я тут главный</td>
+						<td>Готов?</td>
+					</tr>
+				</table>-->
+			</main>
 
-		<footer>
-			<p>Footer</p>
-		</footer>
+			<footer>
+				<p>Footer</p>
+			</footer>
+		</div>
 	</body>
 </html>
