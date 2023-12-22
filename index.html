@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" dir="ltr">
 	<head>
 		<title>Ivan Muravev - Beginner developer</title>
 		<meta charset="UTF-8">
@@ -8,8 +8,8 @@
 		<meta name="author" content="Ivan Muravev">
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="styles/main.css" >
+		<link rel="stylesheet" type="text/css" href="styles/media-queries.css">
 		<link rel="stylesheet" type="text/css" href="styles/light.css" id="theme-link">
-		<!--<script type="text/javascript" src="scripts/table.js"></script>-->
 		<script type="text/javascript" src="scripts/themes.js" defer></script>
 	</head>
 	<body>
@@ -17,10 +17,11 @@
 			<div class="theme-button" id="theme-button">Change theme</div>
 			<header class="header">
 					<div class="header__content">
-						<h1>Home page</h1>
+						<h1>Muravev Ivan</h1>
 						<nav class="nav">
 							<div class="nav__content">
-								<a href="skills.html" class="nav__item nav__item_active">Skills</a>
+								<a href="index.html" class="nav__item nav__item_active">Home</a>
+								<a href="services.html" class="nav__item">Services</a>
 								<a href="contacts.html" class="nav__item">Contacts</a>
 							</div>
 						</nav>
@@ -29,41 +30,43 @@
 
 			<main class="main">
 				<article class="main__content">
-					<h1>In general about me</h1>
-					<p>Incredible software developer who is need for every human on the Earth.</p>
-					<p>LOL I'm just a genius.</p>
+					<h1>Обо мне</h1>
+					<div class="resume">
+						<img src="images/profile_placeholder.png" alt="Фото">
+						<div class="resume__text">
+						<h3>Муравьев Иван</h3>
+						<p>Место обучения: РТУ МИРЭА</p>
+						<p>О себе:</p>
+						<p> Начинающий фронтэнд разработчик</p>
+						Ключевые навыки:
+						<ul>
+							<li>Знание HTML</li>
+							<li>Знание CSS</li>
+							<li>Знание JavaScript</li>
+							<li>Адаптивная и кроссбраузерная верстка</li>
+							<li>Проектирование архитектуры веб-приложений</li>
+							<li>Тестирование и отладка веб-сайтов</li>
+							<li>Исправление проблем в пользовательском интерфейсе</li>
+							<li>Знание основ SEO</li>
+						</ul>
 				</article>
-				<!--
-				<table>
-					<tr>
-						<td>Выбери меня</td>
-						<td>Или меня</td>
-						<td>Можно и меня</td>
-						<td>Лучше меня</td>
-					</tr>
-					<tr>
-						<td>Выбери меня</td>
-						<td>Или меня</td>
-						<td>Можно и меня</td>
-						<td>Лучше меня</td>
-					</tr>
-					<tr>
-						<td>Никого не слушай</td>
-						<td>Лучше сюда</td>
-						<td>Я тут главный</td>
-						<td>Готов?</td>
-					</tr>
-					<tr>
-						<td>Никого не слушай</td>
-						<td>Лучше сюда</td>
-						<td>Я тут главный</td>
-						<td>Готов?</td>
-					</tr>
-				</table>-->
 			</main>
 
-			<footer>
-				<p>Footer</p>
+			<footer class="footer">
+				<div class="footer__content">
+					<div class="footer__item">Карта сайта
+						<nav class="footer_nav">
+							<div class="footer_nav__content">
+								<a href="index.html" class="nav__item">Home</a>
+								<a href="services.html" class="nav__item">Services</a>
+								<a href="contacts.html" class="nav__item">Contacts</a>
+							</div>
+						</nav>
+					</div>
+					<div class="footer__item">
+						Сайт создан и поддерживается Муравьевым Иваном, 2023 год
+					</div>
+				</div>
 			</footer>
 		</div>
 	</body>

@@ -1,38 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" dir="ltr">
 	<head>
+		<title>Ivan Muravev - Contacts</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Buisness card website">
 		<meta name="author" content="Ivan Muravev">
-		<title>Ivan Muravev - Beginner developer | Contacts</title>
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-		<link rel="stylesheet" href="css/styles.css" type="text/css">
-		<script src="js/script.js" defer></script>
-		<!-- <style></style> -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css" >
+		<link rel="stylesheet" type="text/css" href="styles/media-queries.css">
+		<link rel="stylesheet" type="text/css" href="styles/light.css" id="theme-link">
+		<script type="text/javascript" src="scripts/themes.js" defer></script>
 	</head>
 	<body>
-		<header>
-				<h1>Contacts</h1>
-		</header>
+		<div class="wrapper">
+			<div class="theme-button" id="theme-button">Change theme</div>
+			<header class="header">
+					<div class="header__content">
+						<h1>Muravev Ivan</h1>
+						<nav class="nav">
+							<div class="nav__content">
+								<a href="index.html" class="nav__item ">Home</a>
+								<a href="services.html" class="nav__item">Services</a>
+								<a href="contacts.html" class="nav__item nav__item_active">Contacts</a>
+							</div>
+						</nav>
+					</div>
+			</header>
 
-		<main>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="skills.html">Skills</a></li>
-				</ul>
-			</nav>
-  
-			<article>
-				<h1>My contacts</h1>
-				<p>I'm a anonymous))))) and have no contacts.</p>
-				<p>just a joke.</p>
-			</article>
-		</main>
+			<main class="main">
+				<article class="main__content">
+					<h1>Контакты</h1>
+					<p>Вы можете связаться со мной по следующим контактам:</p>
+					<ul>
+						<li>Телефон: 8-(903)-211-52-14</li>
+						<li>Email: <a href="mailto:muraviev.ivan04@gmail.com">muraviev.ivan04@gmail.com</a></li>
+						<li>GitHub: <a href="https://github.com/Skeyanast">Skeyanast</a></li>
+						<li>VK: <a href="https://vk.com/wxnnxbe">wxnnxbe</a></li>
+						<li>Telegram: <a href="https://t.me/wxnnxbe">wxnnxbe</a></li>
+					</ul>
+				</article>
+			</main>
 
-		<footer>
-			<p>Footer</p>
-		</footer>
+			<footer class="footer">
+				<div class="footer__content">
+					<div class="footer__item">Карта сайта
+						<nav class="footer_nav">
+							<div class="footer_nav__content">
+								<a href="index.html" class="nav__item">Home</a>
+								<a href="services.html" class="nav__item">Services</a>
+								<a href="contacts.html" class="nav__item">Contacts</a>
+							</div>
+						</nav>
+					</div>
+					<div class="footer__item">
+						Сайт создан и поддерживается Муравьевым Иваном, 2023 год
+					</div>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>
