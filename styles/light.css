@@ -40,6 +40,12 @@ body
     border: 2px solid #000000;
 }
 
+.service
+{
+    border: 2px solid #111;
+    background-color: #8db0d8;
+}
+
 .theme-button
 {
     color: #f4f4f4;

@@ -6,7 +6,7 @@ const darkTheme = "styles/dark.css";
 
 if (currentTheme == "dark") {
     link.setAttribute("href", darkTheme);
-}
+};
 
 button.addEventListener("click", function() { ChangeTheme() });
 
@@ -26,4 +26,4 @@ function ChangeTheme() {
     link.setAttribute("href", currTheme);
 
     localStorage.setItem("theme", theme);
-}
+};

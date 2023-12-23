@@ -3,11 +3,14 @@ const path = require('path');
 const app = express();
 app.use(express.static(path.join(dirname, 'Сайт-визитка')));
 app.get('/', (req, res) => {
-  res.sendFile(path.join(dirname, 'Сайт-визитка', 'main.html'));
+  res.sendFile(path.join(dirname, 'Сайт-визитка', 'index.html'));
 });
-app.get('/about', (req, res) => {
-  res.sendFile(path.join(dirname, 'Сайт-визитка', 'about.html'));
+app.get('/services', (req, res) => {
+  res.sendFile(path.join(dirname, 'Сайт-визитка', 'services.html'));
 });
+app.get('/contacts', (req, res) => {
+    res.sendFile(path.join(dirname, 'Сайт-визитка', 'contacts.html'));
+  });
 app.use((req, res) => {
   res.status(404).sendFile(path.join(dirname, 'Сайт-визитка', '404.html'));
 });

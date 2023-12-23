@@ -67,6 +67,14 @@ body, html
 	max-width: 500px;
 }
 
+.service
+{
+	font-size: 0.8em;
+	padding: 1em;
+	margin: 1.5em 0.2em;
+	border-radius: 30px;
+}
+
 .footer__content
 {
 	display: flex;
